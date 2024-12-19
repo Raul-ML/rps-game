@@ -1,9 +1,12 @@
-let counter =0
-const interval = setInterval(()=>{
-    counter ++;
-    console.log("hola", counter);
-    if (counter>3){
-        clearInterval(interval)
-    }
-    
-},1000);
+//Router
+import {initRouter} from "../src/router"
+
+//Components
+import "./components/start_button";
+
+//Initialization of the Router
+(function(){
+    const containerRoot = document.querySelector(".root");
+    initRouter(containerRoot!);
+
+})();

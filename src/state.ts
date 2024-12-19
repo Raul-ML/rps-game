@@ -10,8 +10,22 @@ const state={
             computerPlay: "",
             myPlay: "",
         },
-        playHistory: []
+        playHistory: [],
+        page: ""
     },
+    setState(newState) {
+        this.data=newState;
+        for (const cb of this.listeners){
+        cb();
+        }
+        console.log("Soy el state, he cambiado ", this.data )
+        
+
+    },
+    subscribe(callback: (any) => any) {
+        this.listeners.push(callback);
+    },
+  
     getState(){
         return this.data
     },
@@ -23,7 +37,6 @@ const state={
         const data=this.getState();
         const history=data.playHistory
         history.push(gamePlayed)
-        console.log(history);
         
         this.data.playHistory=history
     },
@@ -39,3 +52,5 @@ const state={
 }
 
 state.pushToHistory({computerPlay:"rock", myPlay:"paper"})
+
+export {state};
