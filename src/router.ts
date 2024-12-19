@@ -33,8 +33,8 @@ const routes = [
 
   export function initRouter(container: Element) {
     function goTo(path: string) {
-      history.pushState({}, "", path);
-      handleRoute(path);
+        history.pushState({}, "", path);
+        handleRoute(path);
     }
   
     function handleRoute(route) {
@@ -42,7 +42,7 @@ const routes = [
         if (r.path.test(route)) {
           const el = r.component({ goTo: goTo });
           container.firstChild?.remove();
-          container.appendChild(el!);    
+          container.appendChild(el);    
         }
       }
     }
@@ -52,5 +52,7 @@ const routes = [
     } else {
       handleRoute(location.pathname);
     }
-  
+    window.onpopstate = function () {
+        handleRoute(location.pathname);
+    }
 }

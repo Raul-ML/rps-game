@@ -46,11 +46,6 @@ class ComponentStart extends HTMLElement{
                 <button class="start">START</button>
             </div>
         `;
-    
-        const button = this.shadow.querySelector(".start");
-        button?.addEventListener("click", () => {
-            window.location.href = "../pages/instructions/index.html";
-        });
     }
 }
 customElements.define("start-button", ComponentStart);

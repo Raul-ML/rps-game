@@ -1,7 +1,6 @@
 import {state} from "../../state.ts"
 
 export function pageWelcome(params){
-        const root=document.querySelector(".root")
         const div =document.createElement("div")
         div.className="page-welcome"
         div.innerHTML=`
@@ -70,10 +69,11 @@ export function pageWelcome(params){
             </div>
 
         ` 
-        root?.appendChild(div)
-        const button=root?.querySelector("start-button")
+        const button=div?.querySelector("start-button")
         button?.addEventListener("click", () => {
             params.goTo("/instructions");
           });
+
+    return div
 }
 

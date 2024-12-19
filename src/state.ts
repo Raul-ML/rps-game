@@ -9,10 +9,13 @@ const state={
         currentGame: {
             computerPlay: "",
             myPlay: "",
+            result: "",
         },
         playHistory: [],
         page: ""
     },
+    listeners: [],
+    
     setState(newState) {
         this.data=newState;
         for (const cb of this.listeners){
@@ -41,16 +44,26 @@ const state={
         this.data.playHistory=history
     },
     whoWins(myPlay:Play, computerPlay:Play){
+        let win:boolean=false
+        let draw:boolean=false
         if (myPlay!=computerPlay){
-            const win:boolean = (myPlay=="scissors"&&computerPlay=="paper")||(myPlay=="paper"&&computerPlay=="rock")||(myPlay=="rock"&&computerPlay=="scissors")
+            win = (myPlay=="scissors"&&computerPlay=="paper")||(myPlay=="paper"&&computerPlay=="rock")||(myPlay=="rock"&&computerPlay=="scissors")
         }else{
-            const empate=true
+            draw=true
         }
-        
+
+        const data=this.getState();
+        if (win){
+            data.currentGame.result="win"
+        }else if (draw){
+            data.currentGame.result="draw"
+        }else{
+            data.currentGame.result="lose"
+        }
+
+        this.setState(data);
     }
 
 }
-
-state.pushToHistory({computerPlay:"rock", myPlay:"paper"})
 
 export {state};
