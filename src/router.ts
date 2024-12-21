@@ -1,5 +1,7 @@
 import { pageInstructions } from "./pages/instructions";
 import { pageWelcome } from "./pages/welcome";
+import { pageGame } from "./pages/game";
+import { pageResults } from "./pages/results";
 import {state} from "../src/state"
 
 
@@ -14,18 +16,14 @@ const routes = [
       path: /\/welcome/,
       component: pageWelcome,
     },
-    // {
-    //   path: /\/como-jugar/,
-    //   component: pageComoJugar,
-    // },
-    // {
-    //   path: /\/jugar/,
-    //   component: pageJuego,
-    // },
-    // {
-    //   path: /\/resultado/,
-    //   component: pageResultado,
-    // },
+    {
+      path: /\/game/,
+      component: pageGame,
+    },
+    {
+      path: /\/results/,
+      component: pageResults,
+    },
   ];
 
 

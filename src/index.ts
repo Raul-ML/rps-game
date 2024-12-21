@@ -2,7 +2,7 @@
 import {initRouter} from "../src/router"
 
 //Components
-import "./components/start_button";
+import "./components/button";
 
 //Initialization of the Router
 (function(){
