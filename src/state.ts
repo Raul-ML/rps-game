@@ -15,7 +15,7 @@ const state={
         page: ""
     },
     listeners: [],
-    
+
     setState(newState) {
         this.data=newState;
         for (const cb of this.listeners){
@@ -23,6 +23,14 @@ const state={
         }
         console.log("Soy el state, he cambiado ", this.data )
         
+
+    },
+    resetGame() {
+        const currentState=this.getState();
+        currentState.currentGame.myPlay=""
+        currentState.currentGame.computerPlay=""
+        currentState.currentGame.result=""
+        this.setState(currentState);
 
     },
     subscribe(callback: (any) => any) {
@@ -35,6 +43,12 @@ const state={
     setMove(move:Play){
         const currentState=this.getState();
         currentState.currentGame.myPlay=move
+    },
+    setComputerPlay(){
+        const currentState=this.getState();
+        const playArray=["rock","paper","scissors"]
+        const move=playArray[Math.floor(Math.random()*3)]
+        currentState.currentGame.computerPlay=move
     },
     pushToHistory(gamePlayed:Game){
         const data=this.getState();
@@ -66,4 +80,4 @@ const state={
 
 }
 
-export {state};
+export {state, Play, Game};

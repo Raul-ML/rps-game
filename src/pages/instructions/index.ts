@@ -56,9 +56,7 @@ export function pageInstructions(params){
                 gap: 40px;
                 align-items: center;
                 position: absolute;
-                bottom: -25px;
-                right: auto;
-                left: auto;
+                bottom: -23px;
             }
             img.rock{
                 margin-top: 23px;
@@ -82,6 +80,7 @@ export function pageInstructions(params){
         ` 
     const button=div?.querySelector("my-button")
     button?.addEventListener("click", () => {
+        state.resetGame();
         params.goTo("/game");
       });
 

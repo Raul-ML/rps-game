@@ -18,6 +18,7 @@ class ComponentPlay extends HTMLElement{
         const play=this.classList.contains("rock") ? "rock" : 
         this.classList.contains("paper") ? "paper" : 
         this.classList.contains("scissors") ? "scissors" : "test";
+
         console.log(play)
         
         if (play=="rock"){
@@ -26,6 +27,9 @@ class ComponentPlay extends HTMLElement{
                 div{
                     background-image: url(${rockImage});
                     background-size:cover;
+                }
+                .selected{
+                    margin:0;
                 }
                 </style>
                 <div></div>
