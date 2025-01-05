@@ -33,6 +33,14 @@ export function pageGame(params){
                 color: black;
                 font-family: "American Typewriter";
             }
+            div.please>h1{
+                font-size:50px;
+                color: black;
+                font-family: "American Typewriter";
+                margin:0;
+                padding:0;
+                text-align:center;
+            }
             my-play{
                 margin:0;
                 margin-top:20px;
@@ -47,11 +55,14 @@ export function pageGame(params){
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                bottom: -15px;
+                bottom: -25px;
                 position:absolute;
             }
             my-play.selected{
                 margin-top:0;
+            }
+            my-play.rock.selected{
+                margin-top:10px;
             }
             my-play.notselected{
                 margin-top:40px;
@@ -61,7 +72,8 @@ export function pageGame(params){
 
 
             <div class="bckg"></div>
-
+            
+            <div class="please"><h1> Please select a play in </h1></div>
             <div class="countdown"><h1> ${countdown}</h1></div>
             
             <div class="rps">
@@ -77,15 +89,12 @@ export function pageGame(params){
             </div>
 
         ` ;
-        const button=div?.querySelector("my-button")
-        button?.addEventListener("click", () => {
-            params.goTo("/instructions");
-          });
           
         state.setComputerPlay();
         
         const arrayClasses= div.querySelectorAll("my-play");
         
+        state.setMove("rock" as Play);                      
         for (let i = 0; i < arrayClasses.length; i++) {
             arrayClasses[i].addEventListener("click", (e) => {
                 const index=i                
@@ -126,6 +135,7 @@ export function pageGame(params){
             },2000);
 
             setTimeout(function (){
+                state.data.page="results"
                 params.goTo("/results");
             },3000);
     return div

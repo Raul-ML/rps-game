@@ -69,7 +69,7 @@ export function pageInstructions(params){
                 <div class="title">
                     <h1>Press PLAY and choose: rock, paper or scissors before 3 seconds.</h1>
                 </div>
-                <my-button text="PLAY"></my-button>
+                <my-button text="PLAY!"></my-button>
             </div>
             <div class="imgs_rps">
                 <img src="${scissorsImage}" alt="Scissors image" class="scissors">
@@ -81,6 +81,7 @@ export function pageInstructions(params){
     const button=div?.querySelector("my-button")
     button?.addEventListener("click", () => {
         state.resetGame();
+        state.data.page="game"
         params.goTo("/game");
       });
 

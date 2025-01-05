@@ -1,18 +1,24 @@
-type Play= "rock" | "paper" | "scissors"
+type Play= "rock" | "paper" | "scissors";
+type Result = "WIN" | "LOSE" | "DRAW";
 type Game= {
     computerPlay: Play,
-    myPlay: Play
-}
-
+    myPlay: Play,
+    result: Result,
+};
 const state={
     data: {
         currentGame: {
-            computerPlay: "",
-            myPlay: "",
-            result: "",
+            computerPlay: "rock" as Play,
+            myPlay: "rock" as Play,
+            result: "DRAW" as Result,
+        } as Game,
+        playHistory : [],
+        summary: {
+            wins: 0 as Number,
+            loses: 0 as Number,
+            draws: 0 as Number
         },
-        playHistory: [],
-        page: ""
+        page: "welcome",
     },
     listeners: [],
 
@@ -27,9 +33,12 @@ const state={
     },
     resetGame() {
         const currentState=this.getState();
-        currentState.currentGame.myPlay=""
-        currentState.currentGame.computerPlay=""
-        currentState.currentGame.result=""
+        currentState.currentGame.myPlay="rock"
+        currentState.currentGame.computerPlay="rock"
+        currentState.currentGame.result="DRAW"
+        currentState.summary.wins=0
+        currentState.summary.loses=0
+        currentState.summary.draws=0
         this.setState(currentState);
 
     },
@@ -41,41 +50,71 @@ const state={
         return this.data
     },
     setMove(move:Play){
-        const currentState=this.getState();
-        currentState.currentGame.myPlay=move
+        const currentStateData=this.getState();
+        currentStateData.currentGame.myPlay=move
     },
     setComputerPlay(){
-        const currentState=this.getState();
+        const currentStateData=this.getState();
         const playArray=["rock","paper","scissors"]
-        const move=playArray[Math.floor(Math.random()*3)]
-        currentState.currentGame.computerPlay=move
+
+        var move=playArray[Math.floor(Math.random()*3)]
+        
+        currentStateData.currentGame.computerPlay=move
     },
     pushToHistory(gamePlayed:Game){
-        const data=this.getState();
-        const history=data.playHistory
-        history.push(gamePlayed)
+        const currentStateData=this.getState();
+        const history=currentStateData.playHistory;
+        console.log("este es el historial inicial: ", history);
         
-        this.data.playHistory=history
+        const newGamePlayed = structuredClone(gamePlayed);
+        
+        const newHistory = [...history, newGamePlayed];        
+        console.log("este es el historial final: ", newHistory);
+
+        currentStateData.playHistory=newHistory;
+
+        this.setState(currentStateData)
+        
     },
     whoWins(myPlay:Play, computerPlay:Play){
         let win:boolean=false
         let draw:boolean=false
+        const currentStateData=this.getState();
+
         if (myPlay!=computerPlay){
             win = (myPlay=="scissors"&&computerPlay=="paper")||(myPlay=="paper"&&computerPlay=="rock")||(myPlay=="rock"&&computerPlay=="scissors")
-        }else{
+        }else if (myPlay===computerPlay ){
             draw=true
+        }else {
+            draw=true
+            currentStateData.currentGame.myPlay="rock"
+            currentStateData.currentGame.computerPlay="rock"
         }
 
-        const data=this.getState();
         if (win){
-            data.currentGame.result="win"
+            currentStateData.currentGame.result="WIN"
         }else if (draw){
-            data.currentGame.result="draw"
+            currentStateData.currentGame.result="DRAW"
         }else{
-            data.currentGame.result="lose"
+            currentStateData.currentGame.result="LOSE"
         }
 
-        this.setState(data);
+    },
+    setResult(){
+        const currentState=this.getState();
+        
+        for (const element of currentState.playHistory) {            
+            if (element){
+                if ( element.result==="WIN"){
+                    currentState.summary.wins++
+                }else if (element.result==="LOSE"){
+                    currentState.summary.loses++
+                }else if (element.result==="DRAW"){
+                    currentState.summary.draws++
+                }
+                
+            }
+        }
     }
 
 }

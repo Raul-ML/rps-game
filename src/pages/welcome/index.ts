@@ -80,6 +80,7 @@ export function pageWelcome(params){
         ` 
         const button=div?.querySelector("my-button")
         button?.addEventListener("click", () => {
+            state.data.page="instructions"
             params.goTo("/instructions");
           });
 
