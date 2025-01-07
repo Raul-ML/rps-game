@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "parcel serve ./src/index.html ",
-    "build": "parcel build  ./src/index.html ",
-    "deploy": "gh-pages -d dist "
+    "build": "parcel build  ./src/index.html --dist-dir build",
+    "deploy": "git push origin main -d build "
   },
   "author": "",
   "license": "ISC",
