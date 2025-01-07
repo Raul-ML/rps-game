@@ -4,12 +4,12 @@
   "scripts": {
     "dev": "parcel serve ./src/index.html ",
     "build": "parcel build  ./src/index.html --dist-dir build",
-    "deploy": "git push origin main -d build "
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.13.2"
+    "parcel": "^2.13.3"
   },
   "dependencies": {
     "ansi-styles": "^4.3.0",
