@@ -1,4 +1,4 @@
-# Rock, Paper Scissors
+# Rock, Paper, Scissors
 
 Welcome to my Rock, Paper, Scissor game. 
 
