@@ -6,7 +6,7 @@
 128C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\caniuse-lite\data\features\text-size-adjust.js133781543105407730 0
 88C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\imgs\Star 1.png133804868244177470 0
 119C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\caniuse-lite\data\features\css-all.js133781543095403733 0
-79C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\.gitignore133791119416215859 0
+79C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\.gitignore133807438805540563 0
 131C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@parcel\source-map\parcel_sourcemap_node\build.rs133781543094459162 0
 101C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@swc\helpers\_\_get133781543098201007 1
 114C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\cosmiconfig\dist\readFile.js.map133781543092025018 0
@@ -33,7 +33,7 @@
 142C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@swc\helpers\cjs\_class_static_private_field_destructure.cjs133781543091684964 0
 100C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\.package-lock.json133785123994574921 0
 106C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\dom-serializer\README.md133781543081929032 0
-73C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist133805729896328286 1
+73C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist133807433636742473 1
 117C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@parcel\core\test\fixtures\main-mjs133781543097328629 1
 131C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\posthtml\node_modules\domutils\lib\traversal.d.ts133781543091186401 0
 109C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\lightningcss-win32-x64-msvc133781543078504597 1
@@ -59,7 +59,7 @@
 90C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\components\button133791118469367666 1
 88C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@lezer133781543071814679 1
 107C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\domutils\lib\helpers.d.ts133781543092965942 0
-81C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\state.ts133805723582902256 0
+81C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\state.ts133807431833994922 0
 113C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@parcel\package-manager\LICENSE133781543079946261 0
 72C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src133791070932534647 1
 95C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\scissors.1edd2670.png133805729075812390 0
@@ -89,7 +89,7 @@
 101C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\type-fest\base.d.ts133781543080298431 0
 83C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\index.html133801445555051525 0
 100C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\msgpackr\README.md133781543093035997 0
-99C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\components\button\index.ts133792881249707415 0
+99C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\components\button\index.ts133807429628519133 0
 115C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\caniuse-lite\data\features\mp3.js133781543102537596 0
 103C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\utility-types\LICENSE133781543075305043 0
 81C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\index.ts133792801868344307 0
@@ -138,7 +138,7 @@
 86C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\pages\welcome133781669563187114 1
 110C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\lightningcss\node\index.d.ts133781543090529935 0
 105C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\lmdb\dist\index.cjs.map133781543095880282 0
-95C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\pages\welcome\index.ts133803139468941656 0
+95C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\pages\welcome\index.ts133807424517528186 0
 110C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\ordered-binary\tests\test.js133781543080392184 0
 127C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@swc\helpers\_\_class_apply_descriptor_update133781543097328629 1
 133C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\posthtml\node_modules\entities\lib\encode-trie.d.ts133781543091186401 0
@@ -146,7 +146,7 @@
 99C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\picomatch\LICENSE133781543075175476 0
 119C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@swc\helpers\cjs\_async_generator.cjs133781543081055906 0
 109C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\weak-lru-cache\package.json133781543080597923 0
-95C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\pages\results\index.ts133805728696930945 0
+95C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\pages\results\index.ts133807433635656794 0
 123C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\caniuse-lite\data\features\css3-colors.js133781543097935555 0
 88C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@babel133781543071814679 1
 100C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\src\pages\instructions\index.ts133803139985842471 0
@@ -2153,7 +2153,7 @@
 113C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\caniuse-lite\data\regions\FJ.js133781543099366821 0
 143C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\@parcel\runtime-js\src\helpers\browser\esm-js-loader-retry.js133781543090350681 0
 103C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\entities\package.json133781543090745019 0
-91C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.b71e74eb.js133805729896282916 0
+91C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.b71e74eb.js133807433636701239 0
 100C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\entities\readme.md133781543092985910 0
 97C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\.bin\semver.ps1133781543116404819 0
 110C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\node_modules\entities\lib\decode.d.ts.map133781543091764892 0
@@ -4248,7 +4248,7 @@
 92C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.8ec4978a.css133804820707899575 0
 91C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.a08bcbae.js133804862780020686 0
 91C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.a9c7dff0.js133801485318785928 0
-95C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.b71e74eb.js.map133805729896328286 0
+95C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.b71e74eb.js.map133807433636742473 0
 91C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.bc636123.js133804820707899575 0
 95C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.bc636123.js.map133804820708281201 0
 91C:\Users\raulm\Desktop\Programacion\JS\APX\Modulo2\CONSIGNA-RPS-GAME\dist\index.cb91258d.js133801434079986640 0

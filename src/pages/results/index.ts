@@ -83,7 +83,7 @@ export function pageResults(params){
                 gap: 40px;
                 align-items: center;
                 position: absolute;
-                bottom: -15px;
+                bottom: -20px;
                 right: auto;
                 left: auto;
             }
@@ -146,7 +146,7 @@ export function pageResults(params){
             }
 
             .results_info{
-                width: 90%;
+                width: 290px;
                 height: 60%;
                 border:solid;
                 border-radius:15px;
@@ -171,6 +171,17 @@ export function pageResults(params){
             button{
                 position:relative;
                 z-index:100;
+            }
+            div.buttons{
+                display:flex;
+                flex-direction:row;
+                gap: 50px;
+            }
+            @media (width<750px){
+                div.buttons{
+                flex-direction:column;
+                gap:20px;
+                }
             }
 
             </style>
@@ -216,13 +227,24 @@ export function pageResults(params){
                 <p>COMPUTER: ${state.data.summary.loses} </p>
                 <p>DRAWS: ${state.data.summary.draws} </p>
                 </div>
-            <my-button text="PLAY AGAIN"></my-button>            
+            <div class="buttons">    
+                <my-button class="play_again" text="PLAY AGAIN"></my-button>            
+                <my-button class="reset_score"text="RESET SCORE"></my-button>            
+            </div>
             `
-            const button=div?.querySelector("my-button")
-            button?.addEventListener("click", () => {
+            const buttonPlayAgain=div?.querySelector("my-button.play_again")
+            buttonPlayAgain?.addEventListener("click", () => {
                 state.resetGame();
                 state.data.page="game"
                 params.goTo("/game");
+            });
+            const buttonResetScore=div?.querySelector("my-button.reset_score")
+            buttonResetScore?.addEventListener("click", () => {
+                localStorage.clear();
+                state.resetGame();
+                state.data.playHistory=[];
+                state.data.page="instructions"
+                params.goTo("/instructions");
             });
         },3000)
 

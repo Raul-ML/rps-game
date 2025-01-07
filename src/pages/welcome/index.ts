@@ -84,6 +84,7 @@ export function pageWelcome(params){
             params.goTo("/instructions");
           });
 
+          
     return div
 }
 

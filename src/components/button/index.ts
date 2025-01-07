@@ -27,7 +27,7 @@ class ComponentButton extends HTMLElement{
                 }
     
                 button.button {
-                    font-size: 60px;
+                    font-size: 50px;
                     font-family: "Odibee Sans";
                     padding: 10px 20px;
                     background-color: blue;

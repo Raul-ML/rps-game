@@ -5,6 +5,8 @@ type Game= {
     myPlay: Play,
     result: Result,
 };
+
+
 const state={
     data: {
         currentGame: {
@@ -12,7 +14,7 @@ const state={
             myPlay: "rock" as Play,
             result: "DRAW" as Result,
         } as Game,
-        playHistory : [],
+        playHistory : JSON.parse(localStorage.getItem("playHistory")||"[]"),
         summary: {
             wins: 0 as Number,
             loses: 0 as Number,
@@ -27,8 +29,17 @@ const state={
         for (const cb of this.listeners){
         cb();
         }
+        
         console.log("Soy el state, he cambiado ", this.data )
         
+        
+    },
+    setLocalStorage(){
+        console.log("setlocalstorage activado");
+        console.log("soy el local storage:", localStorage);
+        
+        const stateData=this.data;
+        localStorage.setItem("playHistory", JSON.stringify(stateData.playHistory))
 
     },
     resetGame() {
@@ -52,6 +63,8 @@ const state={
     setMove(move:Play){
         const currentStateData=this.getState();
         currentStateData.currentGame.myPlay=move
+        this.setState(currentStateData)
+
     },
     setComputerPlay(){
         const currentStateData=this.getState();
@@ -60,20 +73,20 @@ const state={
         var move=playArray[Math.floor(Math.random()*3)]
         
         currentStateData.currentGame.computerPlay=move
+        this.setState(currentStateData)
     },
     pushToHistory(gamePlayed:Game){
         const currentStateData=this.getState();
         const history=currentStateData.playHistory;
-        console.log("este es el historial inicial: ", history);
         
         const newGamePlayed = structuredClone(gamePlayed);
         
         const newHistory = [...history, newGamePlayed];        
-        console.log("este es el historial final: ", newHistory);
 
         currentStateData.playHistory=newHistory;
 
         this.setState(currentStateData)
+        this.setLocalStorage()
         
     },
     whoWins(myPlay:Play, computerPlay:Play){
@@ -98,7 +111,7 @@ const state={
         }else{
             currentStateData.currentGame.result="LOSE"
         }
-
+        this.setState(currentStateData)
     },
     setResult(){
         const currentState=this.getState();
@@ -115,6 +128,9 @@ const state={
                 
             }
         }
+        this.setLocalStorage()
+
+        this.setState(currentState)
     }
 
 }
