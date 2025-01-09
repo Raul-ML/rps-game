@@ -170,12 +170,9 @@ export function pageResults(params){
                 margin:3px;
                 padding:0;
             }
-            my-button{
+            button{
                 position:relative;
                 z-index:100;
-                display:flex;
-                justify-content: space-around;
-
             }
             div.buttons{
                 display:flex;

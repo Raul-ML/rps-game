@@ -17,12 +17,12 @@ class ComponentButton extends HTMLElement{
         this.shadow.innerHTML = `
             <style>
                 div.button {
-                    margin: 0;
+                    margin: 0 auto;
                     padding: 0;
                     width: 90%;
                     height: 100%;
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-around;
                     align-items: center;
                 }
     
