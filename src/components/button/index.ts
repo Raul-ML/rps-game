@@ -19,7 +19,7 @@ class ComponentButton extends HTMLElement{
                 div.button {
                     margin: 0;
                     padding: 0;
-                    width: 100%;
+                    width: 90%;
                     height: 100%;
                     display: flex;
                     justify-content: center;
@@ -27,16 +27,16 @@ class ComponentButton extends HTMLElement{
                 }
     
                 button.button {
-                    font-size: 50px;
+                    font-size: 40px;
                     font-family: "Odibee Sans";
-                    padding: 10px 20px;
+                    padding: auto 20px;
                     background-color: blue;
                     color: lightblue;
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
                     width:322px;
-                    height:87px;
+                    height:60px;
                     border: solid 5px darkblue
                 }
     

@@ -109,6 +109,7 @@ export function pageResults(params){
                 display:flex;
                 flex-direction:column;
                 align-items:center;
+                top:40px;
                 gap:30px;                
             }
             div.background_results{
@@ -142,11 +143,12 @@ export function pageResults(params){
                 margin:0;
                 padding:0;
                 margin-bottom:40px;
+                top: 20px;
                 -webkit-text-stroke: 1px black;
             }
 
             .results_info{
-                width: 290px;
+                width: 240px;
                 height: 60%;
                 border:solid;
                 border-radius:15px;
@@ -168,9 +170,12 @@ export function pageResults(params){
                 margin:3px;
                 padding:0;
             }
-            button{
+            my-button{
                 position:relative;
                 z-index:100;
+                display:flex;
+                justify-content: space-around;
+
             }
             div.buttons{
                 display:flex;

@@ -55,7 +55,7 @@ export function pageGame(params){
                 display: flex;
                 flex-direction: row;
                 justify-content: space-evenly;
-                bottom: -25px;
+                bottom: -15px;
                 position:absolute;
             }
             my-play.selected{
